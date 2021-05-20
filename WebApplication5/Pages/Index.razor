@@ -14,7 +14,7 @@ Welcome to your new app.
 
 	private async Task InvokeAsync()
 	{
-		var res = await Http.GetAsync("/api/HttpTrigger1?name=okazuki");
+		var res = await Http.GetAsync("/api/Function1?name=okazuki");
 		Message = await res.Content.ReadAsStringAsync();
 	}
 }
