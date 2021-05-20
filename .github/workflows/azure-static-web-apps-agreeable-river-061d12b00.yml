@@ -37,7 +37,7 @@ jobs:
           # Name of the Azure Function App
           app-name: func-kaotatest
           # Path to package or folder. *.zip or a folder to deploy
-          package: ./output
+          package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
           # Function app slot to be deploy to
           # Publish profile (*.publishsettings) file contents with web deploy secrets
           publish-profile: ${{ secrets.AZURE_FUNCTIONS }}
